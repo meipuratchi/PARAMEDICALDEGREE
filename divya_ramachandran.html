@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramedical Degree Courses - Tamil Nadu</title>
+    <style>
+        :root {
+            --primary-color: #192441;
+            --secondary-color: #2c3e50;
+            --accent-color: #192441;
+            --light-color: #ecf0f1;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--text-color);
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(25,36,65,0.05) 0%, rgba(255,255,255,0.1) 100%);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 15px;
+            animation: pulse 2s infinite;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .logo-text span {
+            color: var(--accent-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Q50,80 0,100 Z" fill="%23f5f7fa"/></svg>');
+            background-size: 100% 100%;
+            bottom: 0;
+            z-index: 1;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            animation: fadeIn 1s ease 0.6s both;
+        }
+        
+        .btn:hover {
+            background-color: #192441;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Floating Elements Animation */
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        .floating-element:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-element:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+            animation-duration: 20s;
+        }
+        
+        .floating-element:nth-child(3) {
+            width: 70px;
+            height: 70px;
+            top: 80%;
+            left: 30%;
+            animation-delay: 4s;
+            animation-duration: 12s;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 32px;
+            color: var(--primary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Courses Section */
+        .courses-section {
+            background-color: white;
+            padding: 60px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .course-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .course-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .course-body {
+            padding: 20px;
+        }
+        
+        .course-detail {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .course-detail i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        /* Tables */
+        .responsive-table {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        /* Info Boxes */
+        .info-box {
+            background-color: white;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .info-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 20px;
+            position: relative;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-column p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+        }
+        
+        /* Special Elements */
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-box::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        .highlight-box h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .highlight-box p {
+            position: relative;
+            line-height: 1.8;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted var(--primary-color);
+            cursor: help;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        /* Accordion */
+        .accordion {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .accordion-header h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        
+        .accordion-header i {
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-header.active i {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .accordion-content.show {
+            padding: 20px;
+            max-height: 1000px;
+        }
+        
+        /* Student Highlight */
+        .student-highlight {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .student-highlight img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--light-color);
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .student-highlight h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .student-highlight p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        /* Notification Badge */
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        
+        /* Tabs */
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            border-bottom: 3px solid var(--accent-color);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .tab:hover:not(.active) {
+            border-bottom: 3px solid rgba(52, 152, 219, 0.3);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="mei_logo.png" alt="Logo">
+                <div class="logo-text">Welcome ! Divya Ramachandran</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#colleges">Colleges</a></li>
+                    <li><a href="#fees">Fees</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Paramedical Degree Courses 2024-25</h1>
+            <p>Government of Tamil Nadu - Comprehensive information about all paramedical degree courses offered in government and self-financing colleges</p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Courses Section -->
+        <section id="courses" class="courses-section">
+            <div class="section-title">
+                <h2>Available Courses</h2>
+            </div>
+            
+            <div class="info-box">
+                <h3>Seat Allocation Information</h3>
+                <p>65% of total seats in Non-Minority Institution and 50% of total seats in Minority Institution, subject to the Policy of the State Government and the court orders in this regard for each Para Medical Course in Self Financing institutions surrendered to Government Quota will be filled as per merit following the rule of reservation in force.</p>
+            </div>
+            
+
+<div class="info-box">
+    
+<div class="responsive-table">
+             
+    <table >
+  <thead>
+    <tr >
+      <th>SL. No.</th>
+      <th>Name of the Course</th>
+      <th>Availability in Govt. Colleges</th>
+      <th>Availability in Self-Financing Colleges under Govt. Quota</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>B.PHARM</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>B.SC.(NURSING)</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>BPT</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>B.O.T</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>BASLP</td>
+      <td>YES</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>B.SC. RADIOGRAPHY AND IMAGING TECHNOLOGY</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>B.SC. RADIO THERAPY TECHNOLOGY</td>
+      <td>YES</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>B.SC. CARDIO-PULMONARY PERFUSION TECHNOLOGY</td>
+      <td>YES</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>B.SC MEDICAL LABORATORY TECHNOLOGY</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>B.SC OPERATION THEATRE & ANAESTHESIA TECHNOLOGY</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>B.SC CARDIAC TECHNOLOGY</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>B.SC CRITICAL CARE TECHNOLOGY</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>B.SC DIALYSIS TECHNOLOGY</td>
+      <td>YES</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>B.SC PHYSICIAN ASSISTANT</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>B.SC ACCIDENT& EMERGENCY CARE TECHNOLOGY</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>B.SC RESPIRATORY THERAPY</td>
+      <td>YES</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>B. OPTOM</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>B.Sc. NEURO ELECTRO PHYSIOLOGY</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>B.Sc. CLINICAL NUTRITION</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+  </tbody>
+</table>
+          
+                </div>
+</div>
+            
+            
+            <div class="tab-content active" id="govt-tab">
+                
+            </div>
+            
+            <div class="tab-content" id="self-tab">
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SL. No.</th>
+                                <th>Name of the Course</th>
+                                <th>Tuition Fee (per Annum)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>B. Pharm</td>
+                                <td>Rs. 43,000/-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>B.Sc., (Nursing)</td>
+                                <td>Rs. 45,000/-</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>B.P.T.</td>
+                                <td>Rs. 33,000/-</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>B.O.T.</td>
+                                <td>Rs. 33,000/-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="info-text" style="margin-top: 20px; font-style: italic;">Note: The actual number of seats offered by the Self-Financing Institutions will be displayed at the time of Counselling.</p>
+            </div>
+        </section>
+
+        <!-- Eligibility Section -->
+        <section id="eligibility" class="courses-section">
+            <div class="section-title">
+                <h2>Eligibility Criteria</h2>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h4>Educational Qualifications</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="info-box">
+                        <h3>For B.Pharm, BASLP & B.Optom:</h3>
+                        <p>English as one of the subject and:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Physics, Chemistry, Biology are mandatory subject (or)</li>
+                            <li>Physics, Chemistry, Botany and Zoology (or)</li>
+                            <li>Physics, Chemistry, Mathematics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3>For All Other Courses:</h3>
+                        <p>English as one of the subject and:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Physics, Chemistry, Biology are mandatory subject (or)</li>
+                            <li>Physics, Chemistry, Botany and Zoology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h4>Calculation of Marks</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Merit List will be made on merit on the basis of marks obtained by the eligible candidates in the prescribed subjects in the qualifying examinations reduced to the base of 200 marks. The marks obtained through different Boards will be taken into account after normalization.</p>
+                    
+                    <div class="responsive-table" style="margin-top: 20px;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subjects</th>
+                                    <th>Calculation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Percentage in Biology (after normalization) (X)</td>
+                                    <td rowspan="3">Weighted total marks for a maximum of 200:<br>
+                                    Either (X+Y) OR (Z+Y) OR (W+Y)</td>
+                                </tr>
+                                <tr>
+                                    <td>Percentage in Physics and Chemistry - Taken Together (Y) (after normalization)</td>
+                                </tr>
+                                <tr>
+                                    <td>Percentage in Botany and Zoology - Taken Together (Z) (after normalization)</td>
+                                </tr>
+                                <tr>
+                                    <td>Percentage in Mathematics (after normalization) (W)</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p style="margin-top: 20px;">The percentage and the weighted total should be accurate to two decimals. Ranking of the candidates will be done based on the total marks obtained in the prescribed Subjects after normalization of marks computed to a maximum of 200.</p>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h4>Cutt of calculator</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                     <h1>Paramedical Cutoff Calculator</h1>
+                    <div class="info-box">
+
+                        <div style="margin-bottom: 20px; text-align: center;">
+  <div style="display: inline-block; border: 1px solid #192441; border-radius: 25px; overflow: hidden;">
+    <button onclick="showGroup('bio-maths')" style="background-color: #192441; color: white; border: none; padding: 10px 20px; cursor: pointer; font-weight: 500;">Bio-Maths</button>
+    <button onclick="showGroup('pure-science')" style="background-color: white; color: #192441; border: none; padding: 10px 20px; cursor: pointer; font-weight: 500;">Pure Science</button>
+    <button onclick="showGroup('computer-science')" style="background-color: white; color: #192441; border: none; padding: 10px 20px; cursor: pointer; font-weight: 500;">Computer Science</button>
+  </div>
+</div>
+
+<!-- Bio-Maths Group (shown by default) -->
+<div id="bio-maths-group" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #192441; margin-bottom: 20px; display: block;">
+    <h2 style="color: #192441; margin-top: 0;">Bio-Maths Students</h2>
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Biology Mark (out of 100)</label>
+    <input type="number" id="bio-maths-bio" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Physics Mark (out of 100)</label>
+    <input type="number" id="bio-maths-phy" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Chemistry Mark (out of 100)</label>
+    <input type="number" id="bio-maths-chem" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <button onclick="calculateBioMaths()" style="background-color: #192441; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: 500;">Calculate Cutoff</button>
+    <div id="bio-maths-result" style="display:none; margin-top: 15px; padding: 10px; background-color: #e9f7ef; border-radius: 4px;">
+        <p style="margin: 5px 0;">Your cutoff mark: <span id="bio-maths-score" style="font-weight: 600; color: #192441;"></span>/200</p>
+        <p style="margin: 5px 0;">Eligible for all paramedical degree courses</p>
+    </div>
+</div>
+
+<!-- Pure Science Group (hidden by default) -->
+<div id="pure-science-group" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #192441; margin-bottom: 20px; display: none;">
+    <h2 style="color: #192441; margin-top: 0;">Pure Science Students</h2>
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Botany Mark (out of 100)</label>
+    <input type="number" id="pure-sci-bot" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Zoology Mark (out of 100)</label>
+    <input type="number" id="pure-sci-zoo" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Physics Mark (out of 100)</label>
+    <input type="number" id="pure-sci-phy" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Chemistry Mark (out of 100)</label>
+    <input type="number" id="pure-sci-chem" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <button onclick="calculatePureScience()" style="background-color: #192441; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: 500;">Calculate Cutoff</button>
+    <div id="pure-sci-result" style="display:none; margin-top: 15px; padding: 10px; background-color: #e9f7ef; border-radius: 4px;">
+        <p style="margin: 5px 0;">Your cutoff mark: <span id="pure-sci-score" style="font-weight: 600; color: #192441;"></span>/200</p>
+        <p style="margin: 5px 0;">Eligible for all paramedical degree courses</p>
+    </div>
+</div>
+
+<!-- Computer Science Group (hidden by default) -->
+<div id="computer-science-group" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #192441; margin-bottom: 20px; display: none;">
+    <h2 style="color: #192441; margin-top: 0;">Computer Science Students</h2>
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Mathematics Mark (out of 100)</label>
+    <input type="number" id="cs-maths" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Physics Mark (out of 100)</label>
+    <input type="number" id="cs-phy" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Chemistry Mark (out of 100)</label>
+    <input type="number" id="cs-chem" min="0" max="100" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+    
+    <button onclick="calculateCS()" style="background-color: #192441; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: 500;">Calculate Cutoff</button>
+    <div id="cs-result" style="display:none; margin-top: 15px; padding: 10px; background-color: #e9f7ef; border-radius: 4px;">
+        <p style="margin: 5px 0;">Your cutoff mark: <span id="cs-score" style="font-weight: 600; color: #192441;"></span>/200</p>
+        <p style="margin: 5px 0;">Eligible for: BASLP, BPHARM, PHARM D, B OPTOMETRY</p>
+    </div>
+</div>
+
+<script>
+function showGroup(group) {
+    // Hide all groups
+    document.getElementById('bio-maths-group').style.display = 'none';
+    document.getElementById('pure-science-group').style.display = 'none';
+    document.getElementById('computer-science-group').style.display = 'none';
+    
+    // Reset button styles
+    document.querySelectorAll('div button').forEach(btn => {
+        btn.style.backgroundColor = 'white';
+        btn.style.color = '#192441';
+    });
+    
+    // Show selected group
+    document.getElementById(group + '-group').style.display = 'block';
+    
+    // Style active button
+    event.target.style.backgroundColor = '#192441';
+    event.target.style.color = 'white';
+}
+
+function calculateBioMaths() {
+    const bio = parseFloat(document.getElementById('bio-maths-bio').value) || 0;
+    const phy = parseFloat(document.getElementById('bio-maths-phy').value) || 0;
+    const chem = parseFloat(document.getElementById('bio-maths-chem').value) || 0;
+    
+    const cutoff = bio + ((phy + chem) / 2);
+    
+    document.getElementById('bio-maths-score').textContent = cutoff;
+    document.getElementById('bio-maths-result').style.display = 'block';
+}
+
+function calculatePureScience() {
+    const bot = parseFloat(document.getElementById('pure-sci-bot').value) || 0;
+    const zoo = parseFloat(document.getElementById('pure-sci-zoo').value) || 0;
+    const phy = parseFloat(document.getElementById('pure-sci-phy').value) || 0;
+    const chem = parseFloat(document.getElementById('pure-sci-chem').value) || 0;
+    
+    const cutoff = (bot + zoo + phy + chem) / 2;
+    
+    document.getElementById('pure-sci-score').textContent = cutoff;
+    document.getElementById('pure-sci-result').style.display = 'block';
+}
+
+function calculateCS() {
+    const maths = parseFloat(document.getElementById('cs-maths').value) || 0;
+    const phy = parseFloat(document.getElementById('cs-phy').value) || 0;
+    const chem = parseFloat(document.getElementById('cs-chem').value) || 0;
+    
+    const cutoff = maths + ((phy + chem) / 2);
+    
+    document.getElementById('cs-score').textContent = cutoff;
+    document.getElementById('cs-result').style.display = 'block';
+}
+</script>
+                       
+                    </div>
+                    
+                  
+ 
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h4>Reservation Policy</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="responsive-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Open Competition</td>
+                                    <td>31%</td>
+                                </tr>
+                                <tr>
+                                    <td>Backward Class</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <td>Most Backward Community</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Scheduled Caste</td>
+                                    <td>18%</td>
+                                </tr>
+                                <tr>
+                                    <td>Scheduled Tribe</td>
+                                    <td>1%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<section id="colleges" class="courses-section">
+            <div class="section-title">
+                <h2>DURATION OF THE COURSES</h2>
+            </div>
+            
+            <div class="info-box">
+                <h3>Courses Study Details: </h3>
+
+
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SL. No.</th>
+                                <th>Name of the Course</th>
+                                <th>Duration</th>
+                                <th>Hostel Facility</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>B.PHARM</td>
+                                <td>4 years</td>
+                                <td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>B.SC.(NURSING)</td>
+                                <td>4 Academic years of 8 Semesters</td>
+                                <td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>BPT</td>
+                                <td>4 Academic Years of 8 Semesters and 6 months Compulsory Resident Internship</td>
+                                <td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>B.O.T</td>
+                                <td>4 Academic years of 8 semesters and 6 months compulsory Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>BASLP</td>
+                                <td>4 Academic Years including one year internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>B.SC. RADIOGRAPHY AND IMAGING TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>B.SC. RADIO THERAPY TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>B.SC. CARDIO-PULMONARY PERFUSION TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>B.SC MEDICAL LABORATORY TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>B.SC OPERATION THEATRE & ANAESTHESIA TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>B.SC CARDIAC TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>B.SC CRITICAL CARE TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>B.SC DIALYSIS TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>B.SC PHYSICIAN ASSISTANT</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>B.SC ACCIDENT& EMERGENCY CARE TECHNOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>B.SC RESPIRATORY THERAPY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>B. OPTOM</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>B.Sc. NEURO ELECTRO PHYSIOLOGY</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>B.Sc. CLINICAL NUTRITION</td>
+                                <td>3 years and one year Compulsory Resident Internship</td>
+                                <td>NO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+
+
+        <!-- Colleges Section -->
+        <section id="colleges" class="courses-section">
+            <div class="section-title">
+                <h2>SEAT MATRIX</h2>
+            </div>
+            
+            <div class="info-box">
+                <h3>LIST OF GOVERNMENT PARAMEDICAL INSTITUIONS WITH TENTATIVE 
+SEAT MATRIX </h3>
+                <a href="seat_matix.pdf" class="btn" style="margin-top: 15px;">Tap me</a>
+            </div>
+            
+        </section>
+
+        <section id="colleges" class="courses-section">
+            <div class="section-title">
+                <h2>VACANCY & Merit List</h2>
+            </div>
+            
+            <div class="info-box">
+                <h3>TENTATIVE VACANCY POSITION FOR 
+PARAMEDICAL DEGREE COURSES  2024-2025</h3>
+                <a href="vancancy.pdf" class="btn" style="margin-top: 15px;">Tap me</a>
+            </div>
+
+              <div class="info-box">
+                <h3> Paramedical Degree Courses Session :2024 - 2025<br>
+ Provisional List of Candidates allotted on - 26.09.2024</h3>
+                <a href="meritlist.pdf" class="btn" style="margin-top: 15px;">Tap me</a>
+            </div>
+            
+        </section>
+
+        <!-- Fees Section -->
+        <section id="fees" class="courses-section">
+            <div class="section-title">
+                <h2>Fee Structure</h2>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Government Colleges</h3>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Tuition Fee for All Courses: Rs. 3,000/- per annum</span>
+                        </div>
+                        <div class="course-detail">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Benchmark disability category candidates are exempted from Tuition Fee and Special Fee</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Self-Financing Colleges</h3>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>B. Pharm: Rs. 43,000/- per annum</span>
+                        </div>
+                        <div class="course-detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>B.Sc., (Nursing): Rs. 45,000/- per annum</span>
+                        </div>
+                        <div class="course-detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>B.P.T.: Rs. 33,000/- per annum</span>
+                        </div>
+                        <div class="course-detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>B.O.T.: Rs. 33,000/- per annum</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Discontinuation Fee</h3>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-detail">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Students who discontinue after cutoff date must pay Rs. 1,00,000/-</span>
+                        </div>
+                        <div class="course-detail">
+                            <i class="fas fa-university"></i>
+                            <span>Demand Draft in favor of "The Secretary, Selection Committee, Kilpauk, Chennai – 10"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="colleges" class="courses-section">
+            <div class="section-title">
+                <h2>Explore More</h2>
+            </div>
+            
+            <div class="info-box">
+                <h3>PROSPECTUS FOR ADMISSION TO PARAMEDICALDEGREE COURSES  
+UNDER GOVERNMENT QUOTA 
+2024-2025 SESSION  </h3>
+                <a href="explore.pdf" class="btn" style="margin-top: 15px;">Tap me</a>
+            </div>
+            
+        </section>
+
+        
+        <!-- Highlight Box -->
+        <div class="highlight-box">
+            <h3>Thank You for Choosing Meipurachi</h3>
+            <p>We have provided you with all the essential information about Tamil Nadu Paramedical Degree Courses. If you have any further questions or need clarification, our dedicated team is always ready to assist you. You can reach us via phone, email, or WhatsApp for any queries regarding admissions, courses, or eligibility criteria.</p>
+            <p>Remember, your dreams are achievable when you stay committed to your path. Trust in your abilities and work diligently towards your goals. We believe in your potential and wish you the very best in your academic and professional journey.</p>
+            <p style="font-style: italic; margin-top: 15px;">"எண்ணிய எண்ணியாங்கு எய்து எண்ணியார் திண்ணியர் ஆகப் பெறின்"<br>
+            (If the determined ones persist, they will achieve what they aspire for)</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Providing comprehensive information about Paramedical Degree Courses in Tamil Nadu Government and Self-Financing colleges.</p>
+                    <div class="social-links">
+
+        <a href="https://www.facebook.com/people/Mei-Puratchi/pfbid02CebTu4BGTjdLaneMEbRXa7QQwAxpHQ4tVukDr9XCAzokawjEC28d8YSeeang6JGFl/" style="color: white; margin: 0 10px; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/meipuratchi" style="color: white; margin: 0 10px; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/meipuratchi/" style="color: white; margin: 0 10px; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/%E0%AE%AE%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%B0%E0%AE%9F%E0%AF%8D%E0%AE%9A%E0%AE%BF/" style="color: white; margin: 0 10px; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#eligibility">Eligibility</a></li>
+                        <li><a href="#colleges">Colleges</a></li>
+                        <li><a href="#fees">Fee Structure</a></li>
+                        <li><a href="#">Merit List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 id="contact">Contact Us</h3>
+                    
+                    <p><i class="fas fa-phone"></i> +91 72002 82924 </p>
+                    <p><i class="fas fa-envelope"></i>Meipurachi@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tamil Nadu Paramedical Degree Courses.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <i class="fas fa-question"></i>
+    </div>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+                const content = header.nextElementSibling;
+                if (header.classList.contains('active')) {
+                    content.classList.add('show');
+                } else {
+                    content.classList.remove('show');
+                }
+            });
+        });
+        
+        // Tab functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-tab`).classList.add('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Floating Action Button click event
+        document.querySelector('.fab').addEventListener('click', () => {
+            window.location.href = '#contact';
+        });
+        
+        // Animate elements when they come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.course-card, .info-box, .accordion');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animated elements
+        document.querySelectorAll('.course-card, .info-box, .accordion').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        // Run animation on scroll
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
